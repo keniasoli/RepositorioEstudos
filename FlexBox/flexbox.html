@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            margin: 0 auto;
+            max-width:300px;
+        }
+        .item{
+            background-color: burlywood;
+            padding: 5px;
+            margin: 5px;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .item-1{            
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Block</h1>
+    <section class="container">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Display Flex</h1>
+    <section class="container flex">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+        <div class="item"> Box 4</div>
+    </section>
+
+    <h1>Display Flex - ultrapassando o tamanho do container</h1>
+    <section class="container flex">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+        <div class="item"> Box 4</div>
+        <div class="item"> Box 5</div>
+        <div class="item"> Box 6</div>
+        <div class="item"> Box 7</div>
+    </section>
+
+    <h1>Display Flex - flex-wrap:wrap para dar quebra </h1>
+    <section class="container flex flex-wrap">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+        <div class="item"> Box 4</div>
+        <div class="item"> Box 5</div>
+        <div class="item"> Box 6</div>
+        <div class="item"> Box 7</div>
+    </section>
+
+    <h1>Display Flex - flex-item:1 para ocupar o tamanho do container</h1>
+    <section class="container flex">
+        <div class="item item-1"> Box 1</div>
+        <div class="item item-1"> Box 2 </div>
+        <div class="item item-1"> Box 3</div>    
+    </section>
+</body>
+</html>

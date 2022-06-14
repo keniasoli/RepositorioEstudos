@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+<style>
+    .container{
+        border: 1px solid black;
+        margin: 0 auto;
+        max-width:500px;
+        display: flex;
+    }
+    .item{
+        background-color: burlywood;
+        padding: 5px;
+        margin: 5px;        
+    }
+    .column{
+        flex-direction: column;
+        min-height: 200px;
+
+    }
+    .flex-start {
+	justify-content: flex-start;
+    }
+
+    .flex-end {
+        justify-content: flex-end;
+    }
+
+    .center {
+        justify-content: center;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .space-around {
+        justify-content: space-around;
+    }
+</style>
+</head>
+<body>
+    <h1>Flex justify justify-content:flex-start </h1>
+    <p>Alinhado no inicio do container</p>
+    <section class="container flex-start">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:flex-end</h1>
+    <p>Alinhado no final do container</p>
+    <section class="container flex-end">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:center</h1>
+    <p>Alinhado no centro do container</p>
+    <section class="container center">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:space-between</h1>
+    <p>Espaço proporcional entre os elementos do container. Sendo que o primeiro elemento é posicionado no inicio e o ultimo no final do container</p>
+    <section class="container space-between">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:space-around</h1>
+    <p>Espaço proporcional entre os elementos do container. Os espaçamentos do meio são duas vezes maiores que o inicial e final.</p>
+    <section class="container space-around">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Na sequencia com os elementos colocados em colunas flex-direction:collumn</h1>
+
+    <h1>Flex justify justify-content:flex-start </h1>
+    <p>Alinhado no inicio do container</p>
+    <section class="container flex-start column">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:flex-end</h1>
+    <p>Alinhado no final do container</p>
+    <section class="container flex-end column">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:center</h1>
+    <p>Alinhado no centro do container</p>
+    <section class="container center column">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:space-between</h1>
+    <p>Espaço proporcional entre os elementos do container. Sendo que o primeiro elemento é posicionado no inicio e o ultimo no final do container</p>
+    <section class="container space-between column">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+    <h1>Flex justify justify-content:space-around</h1>
+    <p>Espaço proporcional entre os elementos do container. Os espaçamentos do meio são duas vezes maiores que o inicial e final.</p>
+    <section class="container space-around column">
+        <div class="item"> Box 1</div>
+        <div class="item"> Box 2 </div>
+        <div class="item"> Box 3</div>
+    </section>
+
+</body>
+</html>

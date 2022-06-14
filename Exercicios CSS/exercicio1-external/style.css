@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nome-fonte';
+    src: url(lovestory.ttf) format('truetype');
+    /*arquivo otf format('opentype')*/
+}
+
+body{
+    
+    /*background-image: linear-gradient(to top, rgb(20, 138, 20), rgb(93, 185, 93));
+    /*ackground-image: linear-gradient(90deg, rgb(20, 138, 20), rgb(93, 185, 93));
+    background-image: radial-gradient(circle, rgb(20, 138, 20), rgb(93, 185, 93));    */
+}
+
+h1{
+    color: blue;   
+    font-size: 30px;
+    font-family: 'nome-fonte';   
+    
+ 
+}
+mark{
+    background-color: azure;
+}
+
+p{
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-indent: 30px;
+}
+table, th, td{
+    border: 1px solid;
+    border-color: black;
+}

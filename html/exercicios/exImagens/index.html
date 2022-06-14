@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente aumentar e diminuir a tela </p>
+   <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"><!--Caso o dispositivo tenho um tamanho menor que 750-->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"><!--Caso o dispositivo tenho um tamanho menor que 1050-->
+        <img src="imagens/foto-g.png" alt="Imagem G">
+    </picture>
+
+    <br>
+    <!--<audio src="midia/12 Sou Teu Anjo.mp3" autoplay controls>Meu audio</audio>-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/12 Sou Teu Anjo.mp3" type="audio/mpeg">
+    </audio>
+    
+<br>
+
+    <video src="midia/meuvideo.mp4" width="560" autoplay controls ></video>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oYmHH1-f_L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_r3rTpy0bPMur5wjFHNXSe1BkpRgqmVTKjcNGjnmTAxdHAu86I3Mcqxt8G2LEO1Jc9eM&usqp=CAU" alt="Uma imagem impressionante">
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zpHypUqd_C9Wr4T2uc0PX3c673C-CAJ9rf6QgjyR15Hh6vf8qTTs0kkcYXXzDym_1qY&usqp=CAU" alt="Uma imagem impressionante">
+      
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zpHypUqd_C9Wr4T2uc0PX3c673C-CAJ9rf6QgjyR15Hh6vf8qTTs0kkcYXXzDym_1qY&usqp=CAU" alt="Uma imagem impressionante">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zpHypUqd_C9Wr4T2uc0PX3c673C-CAJ9rf6QgjyR15Hh6vf8qTTs0kkcYXXzDym_1qY&usqp=CAU" alt="Uma imagem impressionante">
+        
+       
+    </figure>
+    <p></p>
+    <!-- Imagem com legenda -->
+    <figure>
+        <a href="http://www.youtube.com.br"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zpHypUqd_C9Wr4T2uc0PX3c673C-CAJ9rf6QgjyR15Hh6vf8qTTs0kkcYXXzDym_1qY&usqp=CAU" alt="Uma imagem impressionante"></a>
+        <figcaption>Legenda para a imagem impressionante</figcaption>
+    </figure>
+    
+    
+    <p><abbr title="ggg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut enim, dolore amet non assumenda alias ad numquam quis voluptatibus aliquam optio commodi sunt quaerat ab cupiditate, quod minus exercitationem! Laborum?</abbr></p>
+
+    &gt;&lt;
+    &#x1F388
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav> 
+
+   <span><img src="imagens/foto-p.png" alt=""> Testando a imagem</span>
+   <p>My mother has <span style="color:blue">blue</span> eyes.</p> 
+</body>
+</html>
